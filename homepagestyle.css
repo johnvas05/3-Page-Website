@@ -1,0 +1,119 @@
+.centered {
+    display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    height: 50vh;       /* Full viewport height */
+}
+.mylogo {
+    width: auto; /* Let the container adjust to the logo's size */
+    height: 100%; /* Take full height of the navbar */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.mylogo img {
+    width: auto; /* Let the image scale naturally */
+    height: 80%; /* Adjust the height relative to the navbar */
+    max-height: 120px; /* Set a maximum height to prevent it from becoming too large */
+    object-fit: contain; /* Ensure the logo fits nicely */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space out logo and nav links */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px;
+    background: linear-gradient(270deg, #22577a, #101627);
+    color: rgba(192, 192, 192, 0.842);
+    min-height: 2.5rem;
+    top: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 30;
+}
+
+.nav-destinations {
+    list-style: none;
+    display: flex;
+    gap: 100px; /* Space between menu items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+.nav-destinations li a {
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-destinations li a:hover {
+    color: #00eeff; /* Change color on hover */
+}
+
+:root {
+    --navbar-height: 140px; /* Define the navbar height */
+}
+
+.navbar {
+    min-height: var(140px);
+    /* Other navbar styles */
+}
+
+.main-content {
+    padding-top: var(140px); /* Use the same value for padding */
+}
+
+
+main {
+    background-color: #acd0df; /* White background for the main content */
+    padding: 250px; /* Add some padding for better spacing */
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+body {
+    background-color: #acd0df; /* Light gray background for the entire page */
+    font-family: Arial, sans-serif; 
+}
+
+
+
+
+
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+    background-image: linear-gradient(144deg, #af40ffbe, #5a42f3be 50%, #00dbebb7);
+}
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
